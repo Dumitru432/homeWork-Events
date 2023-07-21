@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="display" ondblclick="enableEditMode()" style="cursor: pointer">
+      Your text goes here. Double-click to edit.
+    </div>
+    <textarea
+      id="editor"
+      onblur="disableEditMode()"
+      style="display: none"
+    ></textarea>
+
+    <!-- 2 -->
+    <br />
+    <br />
+    <br />
+    <h1>task 2</h1>
+    <table id="sortableTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortTable(1)">Age</th>
+          <th onclick="sortTable(2)">Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>30</td>
+          <td>50000</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>25</td>
+          <td>60000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- task 3 -->
+
+    <h1>task 3</h1>
+
+    <div id="frame">
+      <textarea id="textBlock" onmousedown="startResize(event)"></textarea>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
